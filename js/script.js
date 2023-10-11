@@ -5,15 +5,15 @@ for (let i = 1; i <= 100; i++) {
     let bgBox;
     
     if (i % 3 === 0 && i % 5 === 0 ){  
-        numero = 'FizzBuzz'; 
+        numero = 'fizzbuzz'; 
         bgBox = 'my-bg-fizzbuzz';
 
      } else if (i % 3 === 0){  
-        numero = 'Fizz'; 
+        numero = 'fizz'; 
         bgBox = 'my-bg-fizz';
 
      } else if (i % 5 === 0){ 
-        numero = 'Buzz';
+        numero = 'buzz';
         bgBox = 'my-bg-buzz';
     }
     if (numero === '') {
@@ -24,7 +24,7 @@ for (let i = 1; i <= 100; i++) {
     console.log(numero);
 
     const boxEl = document.createElement('div');
-    boxEl.className = `box ${bgBox} my-box col-2 d-flex justify-content-center align-items-center`;
+    boxEl.className = `box ${bgBox} my-box col-2 text-black fs-5 fw-bold d-flex justify-content-center align-items-center`;
     boxEl.innerHTML = numero;
     wrapperEl.append(boxEl);
 }
