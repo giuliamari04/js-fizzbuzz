@@ -18,12 +18,13 @@ for (let i = 1; i <= 100; i++) {
     }
     if (numero === '') {
         numero = i;
+        bgBox = 'my-bg-box'
     }
 
     console.log(numero);
 
     const boxEl = document.createElement('div');
-    boxEl.className = `box ${bgBox} col-2 p-3`;
+    boxEl.className = `box ${bgBox} my-box col-2 py-5 d-flex justify-content-center align-items-center`;
     boxEl.innerHTML = numero;
     wrapperEl.append(boxEl);
 }
